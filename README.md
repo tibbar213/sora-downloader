@@ -137,7 +137,7 @@ docker run -d -p 5000:8000 \
 
 | 变量名                | 是否必须 | 描述                                                                                              | 示例                               |
 | --------------------- | -------- | ------------------------------------------------------------------------------------------------- | ---------------------------------- |
-| `OPENAI_ACCESS_TOKEN` | **是**   | 用于向 OpenAI 后端 API 发出请求的授权令牌，需从手机 App 获取。                                      | `sess-xxxxxxxxxxxxxxxxxx`          |
+| `OPENAI_ACCESS_TOKEN` | **是**   | 用于向 OpenAI 后端 API 发出请求的授权令牌，需从手机 App 获取。                                      | `eyjhbxxxxxxxxxxxxxxxxxx`          |
 | `APP_ACCESS_TOKEN`    | 否       | 用于保护此 Web 服务的访问令牌。如果设置，前端页面会要求输入此令牌。                               | `my-super-secret-password`         |
 | `HTTP_PROXY`          | 否       | 用于请求 OpenAI API 的 HTTP/HTTPS 代理。如果你的服务器网络受限，则需要此项。                        | `http://127.0.0.1:7890`            |
 
