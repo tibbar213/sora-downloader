@@ -100,10 +100,10 @@ docker build -t sora-downloader .
 这是最简单的运行方式，任何知道你服务器地址的人都可以使用。  
   
 ```bash  
-docker run -d -p 5000:8000 \  
-  -e OPENAI_ACCESS_TOKEN="粘贴你获取的Token" \  
-  --name sora-downloader \  
-  sora-downloader  
+docker run -d -p 5000:8000 \
+  -e SORA_AUTH_TOKEN="粘贴你获取的Token" \
+  --name sora-downloader \
+sora-downloader
 ```  
   
 #### 方式二：启用访问令牌保护  
@@ -111,11 +111,11 @@ docker run -d -p 5000:8000 \
 推荐此方式，为你的服务设置一个简单的密码。  
   
 ```bash  
-docker run -d -p 5000:8000 \  
-  -e OPENAI_ACCESS_TOKEN="粘贴你获取的Token" \  
-  -e APP_ACCESS_TOKEN="设置一个你自己的访问密码" \  
-  --name sora-downloader \  
-  sora-downloader  
+docker run -d -p 5000:8000 \
+  -e SORA_AUTH_TOKEN="粘贴你获取的Token" \
+  -e APP_ACCESS_TOKEN="设置一个你自己的访问密码" \
+  --name sora-downloader \
+sora-downloader
 ```  
   
 #### 方式三：启用访问令牌并使用代理  
@@ -123,12 +123,12 @@ docker run -d -p 5000:8000 \
 如果你的服务器无法直接访问 OpenAI，可以使用此方式。  
   
 ```bash  
-docker run -d -p 5000:8000 \  
-  -e OPENAI_ACCESS_TOKEN="粘贴你获取的Token" \  
-  -e APP_ACCESS_TOKEN="设置一个你自己的访问密码" \  
-  -e HTTP_PROXY="http://你的代理地址:端口" \  
-  --name sora-downloader \  
-  sora-downloader  
+docker run -d -p 5000:8000 \
+  -e SORA_AUTH_TOKEN="粘贴你获取的Token" \
+  -e APP_ACCESS_TOKEN="设置一个你自己的访问密码" \
+  -e HTTP_PROXY="http://你的代理地址:端口" \
+  --name sora-downloader \
+sora-downloader
 ```  
   
 **命令解释:**  
