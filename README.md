@@ -28,7 +28,7 @@
 -   已安装 Docker 或 Python
 
 ### 2. 获取 OpenAI 认证凭据
-这是最关键的一步，你需要获取 `SORA_AUTH_TOKEN` (短期有效) 或 `SORA_REFRESH_TOKEN` (长期有效) 以实现自动续期。
+这是最关键的一步，你需要获取 `SORA_AUTH_TOKEN` (短期有效) 或 `SORA_REFRESH_TOKEN` (长期有效)。
 
 #### 方法一 (推荐): Android (Root) + 抓包
 **此方法需要一台已 Root 的 Android 设备，并具备一定的动手能力。**
