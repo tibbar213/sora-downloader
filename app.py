@@ -98,7 +98,7 @@ def make_sora_api_call(video_id):
     """封装实际的Sora API请求逻辑"""
     api_url = f"https://sora.chatgpt.com/backend/project_y/post/{video_id}"
     headers = {
-        'User-Agent': 'Sora/1.2025.308 (Android 13; M2012K11AC; build 2530800)',
+        'User-Agent': 'Sora/1.2025.308',
         'Accept': 'application/json',
         'Accept-Encoding': 'gzip',
         'oai-package-name': 'com.openai.sora',
